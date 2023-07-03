@@ -1,17 +1,14 @@
 {
   "name": "@itablera/wrap-command",
   "version": "0.7.21",
-  "description": "Collection of utilities and common domains",
-  "main": "src/index",
-  "types": "src/index",
+  "description": "Wrapper for command framework",
+  "main": "dist/index",
+  "types": "dist/index",
   "files": [
-    "src"
+    "dist"
   ],
   "repository": {
     "url": "https://github.com/Itablera/wrap-command.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "npm run clean && npm run compile",
@@ -20,7 +17,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@itablera/wrap-common": "git+ssh://git@github.com:Itablera/wrap-common.git#main",
+    "@itablera/wrap-common": "^0.7.36",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {

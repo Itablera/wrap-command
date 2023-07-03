@@ -1,0 +1,89 @@
+{
+    "categories": [
+      {
+        "title": "## 🛠 Backend",
+        "labels": ["backend"]
+      },
+      {
+        "title": "## 🚀 CI/CD",
+        "labels": ["CI/CD"]
+      },
+      {
+        "title": "## 🎨 CSS Styling",
+        "labels": ["css styling"]
+      },
+      {
+        "title": "## 🕵️‍♂️ Design",
+        "labels": ["design"]
+      },
+      {
+        "title": "## 🐳 Docker",
+        "labels": ["docker"]
+      },
+      {
+        "title": "## 🌈 API",
+        "labels": ["api"]
+      },
+      {
+        "title": "## 🎭 Front-end",
+        "labels": ["frontend"]
+      },
+      {
+        "title": "## ⚙ Microservices",
+        "labels": ["microservices"]
+      },
+      {
+        "title": "## 🏎 Performance",
+        "labels": ["performance"]
+      },
+      {
+        "title": "## 📲 Progressive Web Apps",
+        "labels": ["PWA"]
+      },
+      {
+        "title": "## 🧰 Tools",
+        "labels": ["tools"]
+      },
+      {
+        "title": "## 🖇 Dependencies",
+        "labels": ["dependencies"]
+      },
+      {
+        "title": "## 👨‍💻 Developer Experience",
+        "labels": ["developer-experience"]
+      },
+      {
+        "title": "## 🐛 Bug Fixes",
+        "labels": ["bug"]
+      },
+      {
+        "title": "## 📃 Documentation Updates",
+        "labels": ["documentation"]
+      },
+      {
+        "title": "## 🔐 Security Enhancements",
+        "labels": ["security"]
+      },
+      {
+        "title": "## 🛡 Tests",
+        "labels": ["test"]
+      }
+    ],
+    "ignore_labels": ["ignore"],
+    "sort": "ASC",
+    "template": "${{CATEGORIZED_COUNT}} changes since ${{FROM_TAG}}\n\n${{CHANGELOG}}\n\n## Other Updates\n\n${{UNCATEGORIZED}}\n",
+    "pr_template": "- ${{TITLE}} (#${{NUMBER}})",
+    "empty_template": "No Changes",
+    "label_extractor": [
+      {
+        "pattern": "(.) (.+)",
+        "target": "$1"
+      }
+    ],
+    "max_tags_to_fetch": 200,
+    "max_pull_requests": 250,
+    "max_back_track_time_days": 90,
+    "tag_resolver": {
+      "method": "semver"
+    }
+  }

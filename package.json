@@ -1,6 +1,6 @@
 {
   "name": "@itablera/wrap-command",
-  "version": "0.7.21",
+  "version": "0.7.22",
   "description": "Wrapper for command framework",
   "main": "dist/index",
   "types": "dist/index",
